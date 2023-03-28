@@ -211,7 +211,7 @@ header {
     flex-direction: row;
     height: inherit;
     width: max-content;
-    gap: 10rem auto 5rem auto;
+    gap: 5rem;
     font-size: 1.2rem;
     font-weight: normal;
     align-items: center;
@@ -383,9 +383,10 @@ header {
 }
 
 .project-content-card {
-  margin: 3rem auto;
-  width: 70%;
+  margin: 5rem auto;
+  width: 85%;
   box-shadow: var(--shadow);
+  padding: 1rem;
 }
 
 .project-content-card img {
@@ -442,4 +443,110 @@ header {
   height: 2.2rem;
   width: 2.2rem;
   margin: 0.8rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .projects-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-name {
+    font-size: 1.4rem;
+  }
+
+  .technologies-title {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .projects {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .project-content-card {
+    width: 75%;
+  }
+}
+
+/* ABOUT */
+
+.about-description {
+  font-size: 1.2rem;
+  padding: 1.3rem;
+  line-height: 1.6rem;
+  color: var(--textColor);
+  text-align: justify;
+}
+
+.about .section-title {
+  margin: 2rem auto;
+}
+
+.about-quote {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--textLightColor);
+  margin-top: 0.5rem;
+}
+
+.about img {
+  width: 85%;
+  display: block;
+  margin: 2rem auto;
+}
+
+@media only screen and (min-width: 780px) {
+  .about {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .about-description {
+    padding: 1.7rem;
+  }
+
+  .about img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about img {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .about-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .about-content {
+    display: flex;
+  }
+  .about img {
+    width: 50%;
+  }
+
+  .about-description {
+    padding: 0.2rem;
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .about {
+    width: 80%;
+  }
+  .about-description {
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .about {
+    width: 70%;
+  }
 }
