@@ -132,6 +132,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--White);
+  z-index: 100;
+}
+
+header.active {
+  box-shadow: var(--shadow);
 }
 
 .menu {
@@ -548,5 +556,42 @@ header {
 @media only screen and (min-width: 1800px) {
   .about {
     width: 70%;
+    color: hsla(0, 0%, 60%, 0.25);
   }
 }
+
+/* TECHNOLOGIES */
+
+.technologies-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.technologies-item {
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border-radius: 1rem;
+}
+.technologies-item:hover {
+  box-shadow: var(--shadowHover);
+}
+
+.technologies-item img {
+  width: 6rem;
+}
+
+.technologies-item-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--textLightColor);
+}
+
+.technologies-conteiner .section-title {
+  margin: 5rem auto 2rem auto;
+}
+
+/* CONTACT */
