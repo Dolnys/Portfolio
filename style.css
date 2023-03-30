@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   font-size: 62.5%;
   overflow-x: hidden !important;
@@ -136,6 +138,7 @@ header {
   top: 0;
   background-color: var(--White);
   z-index: 100;
+  transition: all 0.4s ease-in-out;
 }
 
 header.active {
@@ -157,6 +160,7 @@ header.active {
   left: 0;
   top: 0;
   transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
 }
 .menu.active {
   transform: translateX(0);
@@ -581,6 +585,7 @@ header.active {
 
 .technologies-item img {
   width: 6rem;
+  height: 6rem;
 }
 
 .technologies-item-title {
@@ -594,4 +599,96 @@ header.active {
   margin: 5rem auto 2rem auto;
 }
 
+@media only screen and (min-width: 1500px) {
+  .technologies-item {
+    margin: 2rem;
+  }
+}
+
 /* CONTACT */
+
+.contact img {
+  display: none;
+}
+
+.contact-form {
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.contact-form-field {
+  margin: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: var(--textColor);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem 0.2rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--textLightColor);
+}
+
+.contact-form-btn {
+  background: var(--main);
+  border: none;
+  color: var(--White);
+  width: 50%;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form-btn:hover {
+  background: var(--mainHover);
+}
+
+@media only screen and (min-width: 900px) {
+  .contact-form {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .contact img {
+    display: block;
+    width: 45%;
+  }
+  .contact {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .contact {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+  background: var(--main);
+  color: var(--White);
+}
+
+@media only screen and (min-width: 1100px) {
+  footer {
+    font-size: 1.1rem;
+  }
+}
