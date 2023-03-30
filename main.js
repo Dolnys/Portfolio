@@ -1,3 +1,8 @@
+// set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
 const header = document.querySelector("header");
 
 const stickHeader = () => {
